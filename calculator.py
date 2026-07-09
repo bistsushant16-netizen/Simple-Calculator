@@ -52,5 +52,10 @@ percentage = tk.Button(app, text='%', command=lambda: get_value('%'))
 percentage.grid(row=4, column=2)
 equal = tk.Button(app, text='=', command=result)
 equal.grid(row=4, column=3)
+#Row 5
+def clear_screen():
+    screen.delete(0, tk.END) 
 
+clear = tk.Button(app, text='clear', command=clear_screen)
+clear.grid(row=5, column=3)
 app.mainloop()
